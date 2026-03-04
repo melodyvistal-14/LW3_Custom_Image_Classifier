@@ -60,3 +60,29 @@ Each folder represents one class, and each folder contains images of that specif
 ○ How can this system be integrated into a mobile or web application?
   - The system can be integrated via TensorFlow Lite for mobile apps or TensorFlow.js for web apps, letting users take or upload a grass image, get its type, and see results with treatment suggestions, creating a smart plant recognition tool.
 
+
+Guide Questions (Student Explanation & Reflection)
+
+Visualization & Overfitting
+1. What signs indicated overfitting in your first model?
+  - First model had high training accuracy (~99%) but lower validation accuracy (~91%), showing overfitting.
+2. How did data augmentation affect validation accuracy?
+  - Helped the model see more varied images and improved validation accuracy (~97–98%).
+
+Model Improvement
+3. What is the purpose of dropout layers?
+  - It prevent overfitting by randomly turning off neurons during training.
+4. Why does data augmentation improve generalization?
+  - Augmentation helps the model handle new, unseen images better.
+
+Performance Comparison
+5. Compare accuracy before and after improvements.
+  - Validation accuracy improved from ~91% to ~97–98% after improvements.
+6. Which technique contributed most to improvement?
+  - Data augmentation contributed the most in improvement.
+
+Deployment & Application
+7. Why is saving the model important?
+- It allows the trained model to be reused or deployed without retraining.
+8. How can this model be deployed in a real-world system?
+    - The model can be deployed in a mobile or web app where users upload or take a photo of it, and the system predicts its type in real time.
